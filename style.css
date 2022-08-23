@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@600&display=swap');
+
+:root {
+    --primary: #1B98F5;
+    --light: #ffffff;
+    --dark: #dcdcdc;
+}
+
+* {
+    margin: 0px;
+
+}
+
+header {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    padding: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.flex {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items {
+    margin-left: 25px;
+    color: var(--light);
+    font-size: large;
+}
+
+.nav-items:hover {
+    color: var(--primary);
+    font-size: large;
+    text-decoration: underline;
+}
+
+.logo {
+    margin-top: -1px;
+    width: 80px;
+}
+
+.blue {
+    margin-top: -7px;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 8px 16px;
+    border-color: var(--primary);
+    border-radius: 10px;
+}
+
+.H-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.pic1 {
+    margin-top: 30px;
+    height: 400px;
+    background: transparent;
+}
+
+.g1 {
+    margin: 120px;
+    margin-bottom: 100px;
+}
+
+.g1 h1 {
+    color: var(--light);
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.g1 h4 {
+    margin-bottom: 15px;
+    line-height: 23px;
+    color: var(--light);
+}
+
+.H-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pic2 {
+position: relative;
+top: 60px;
+    height: 300px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.g3 {
+    margin: 150px 0px 90px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.g3 h1 {
+    font-size: 26px;
+}
+
+.g3-items h4 {
+    margin-bottom: 5px;
+}
+
+.g3-items h5 {
+    margin-bottom: 10px;
+}
+
+.third h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 45px 140px;
+    column-gap: 10px;
+}
+
+.f {
+    text-align: center;
+    background-color: var(--light);
+    height: 170px;
+    width: 180px;
+    padding-top: 40px;
+    background-image: url('g.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 15px 15px gainsboro;
+
+}
+
+.f1 {
+    margin-bottom: 13px;
+    border-radius: 50%;
+}
+
+.f {
+    border-radius: 10px 10px 10px 10px;
+}
+.f h3 {
+    margin-top: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+.f h3:hover{
+    margin-top: 30px;
+    background-color: palevioletred;
+    
+
+}
+.f h6:hover{
+    background-color: palevioletred;
+}
+.p:hover{
+    margin-top: 0px;
+    background-color: palevioletred;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 13px;
+}
+
+
+
+
+
+@media screen  and (max-width:800px) and (min-width:200px){
+    
+    header{
+        background-image: url('bg.jpg');
+            background-size: cover;
+            padding: 40px;
+            margin-right: -500px;
+            font-family: 'Rubik', sans-serif;
+    }
+    
+    .nav,.logo{
+        display: none;
+    }
+    .btn{
+        margin-left: -190px;
+    }
+    .g1 h4{
+        display: none;
+    }
+.pic1{
+    height: 130px;
+    margin-left: -220px;
+    margin-top: -10px;
+}
+.pic2{
+    position: relative;
+    left: 56px;
+    top: 0px;
+    height: 100px;
+    margin-right: -100px;
+}
+.g3{
+    text-align: center;
+    position: relative;
+    right: 52px;
+    /* margin-left: -60px; */
+}
+.third{
+    margin-top: 0px;
+   margin-left: 140px;
+}
+.feature{
+    margin:0px 0px 0px -90px;
+    display: grid;
+    grid-template-columns:repeat(1,100px);
+     row-gap: 15px;
+}
+}
